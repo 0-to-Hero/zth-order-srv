@@ -14,7 +14,7 @@ import java.util.UUID;
 @Builder
 @NoArgsConstructor
 @AllArgsConstructor
-@Table("orders") // Confirma que o nome da tabela é "orders"
+@Table("orders")
 public class Order {
     @PrimaryKey
     private UUID id;
