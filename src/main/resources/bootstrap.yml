@@ -1,0 +1,16 @@
+spring:
+  profiles:
+    active:
+      - dev
+  application:
+    name: zth-order-srv
+  cloud:
+    config:
+      uri: http://localhost:8001
+      username: admin
+      password: 0th
+      fail-fast: true
+      retry:
+        max-attempts: 15
+        initial-interval: 2000
+        multiplier: 1.5
